@@ -1,0 +1,48 @@
+/* #region Default styles */
+body {
+  margin: 0;
+  padding: 0 0 100px 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+.App {
+  text-align: center;
+  position: relative;
+}
+
+/* #region cards slider */
+.cards-slider-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  cursor: pointer;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  div, li {
+    opacity: 0.7;
+    border-radius: 50%;
+    transition: opacity 300ms linear, border-color 300ms linear, background-color 300ms linear,transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    //transition: all 0.3s linear;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: left;
+    img {
+      max-width: calc(100%);
+      margin: 0 auto;
+      display: block;
+      border-radius: 50%;
+    }
+  }
+}
+
+.cards-slider {
+  position: relative;
+  margin: 0 auto;
+  ul {
+
+  }
+}

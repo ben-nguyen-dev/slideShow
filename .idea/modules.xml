@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../react-image-slideshow-master/02-End/.idea/02-End.iml" filepath="$PROJECT_DIR$/../../react-image-slideshow-master/02-End/.idea/02-End.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../BrightSoft2/mario/MarioFramework.Core/.idea/MarioFramework.Core.iml" filepath="$PROJECT_DIR$/../../../BrightSoft2/mario/MarioFramework.Core/.idea/MarioFramework.Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/my-app.iml" filepath="$PROJECT_DIR$/.idea/my-app.iml" />
+    </modules>
+  </component>
+</project>
