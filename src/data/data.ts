@@ -40,4 +40,32 @@ export const data = [
       "https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property05.jpg",
     description: "Lydia",
   },
+  {
+    _id: "593e929728b7f8543b7907e1a",
+    index: 5,
+    picture:
+      "https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property05.jpg",
+    description: "Lydia",
+  },
+  {
+    _id: "593e929728b7f8543b7907e1b",
+    index: 6,
+    picture:
+      "https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property05.jpg",
+    description: "Lydia",
+  },
+  // {
+  //   _id: "593e929728b7f8543b7907e1c",
+  //   index: 7,
+  //   picture:
+  //     "https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property05.jpg",
+  //   description: "Lydia",
+  // },
+  // {
+  //   _id: "593e929728b7f8543b7907e1d",
+  //   index: 8,
+  //   picture:
+  //     "https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property05.jpg",
+  //   description: "Lydia",
+  // },
 ];
