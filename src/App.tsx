@@ -6,7 +6,7 @@ import { SettingType } from "./components/HorizontalSlideShow/config";
 
 function App() {
   const setting: SettingType = {
-    slidesToShow: 5,
+    slidesToShow: 7,
   };
   return (
     <div className="App">

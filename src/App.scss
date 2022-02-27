@@ -1,3 +1,19 @@
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin mobile { @media (max-width: #{$mobile-width - 1px}) {
+  @content;
+}}
+
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+  @content;
+}}
+
+@mixin desktop {   @media (min-width: #{$desktop-width}) {
+  @content;
+}}
+
 /* #region Default styles */
 body {
   margin: 0;
@@ -13,28 +29,70 @@ body {
 /* #region cards slider */
 .cards-slider-wrapper {
   display: flex;
-  align-items: flex-end;
   position: absolute;
   transition:  600ms all;
-  cursor: pointer;
   list-style-type: none;
   margin: 0;
-  padding: 30px 0;
+  padding: 60px 0 200px 0;
   width: 100%;
   //gap: 32px;
   overflow-x: hidden;
-  div, li {
+  @include mobile {
+    padding: 30px 0 200px 0;
+  }
+  @include tablet {
+    padding: 30px 0 200px 0;
+  }
+  & > div, li {
     opacity: 0.7;
     border-radius: 50%;
     transition:  600ms all;
     text-decoration: none;
-    cursor: pointer;
     text-align: left;
+    padding: 0;
+    &>.description {
+      margin-top: 10px;
+      width: 15vw;
+      @include mobile {
+        margin-top: 5px;
+        width: 25vw;
+      }
+    }
     img {
+      box-shadow: rgb(0 0 0 / 65%) 1px 1px 10px 1px;
       margin: 0 auto;
       display: block;
       border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+      @include mobile {
+        box-shadow: rgb(0 0 0 / 65%) 0px 0px 5px 1px;
+      }
     }
+  }
+}
+
+.description {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  outline: 2px solid #FC00FF;
+  box-shadow: rgb(0 0 0 / 50%) 1px 1px 10px 1px;
+  border-radius: 10px;
+  min-height: 100px;
+  transition: visibility 0s, opacity 0.6s linear;
+  @include mobile {
+    min-height: 50px;
+    padding: 5px;
+    font-size: 12px;
+    box-shadow: rgb(0 0 0 / 65%) 0px 0px 5px 1px;
+  }
+  @include tablet {
+    min-height: 50px;
+    padding: 5px;
+    font-size: 14px;
+    box-shadow: rgb(0 0 0 / 65%) 0px 0px 5px 1px;
   }
 }
 
